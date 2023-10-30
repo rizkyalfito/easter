@@ -1,0 +1,109 @@
+@media screen and (min-width: 600px) {
+    .restaurant .restaurant__review {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+        justify-items: start;
+    }
+    .app-bar .app-bar__brand h1 {
+        font-size: 2.5em;
+    }
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+        font-size: 1.5em;
+    }
+    .app-bar .app-bar__navigation ul li a:hover {
+        color: #E0C097;
+    }
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 32px 0;
+    }
+    .restaurant {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 18px 16px;
+    }
+    .restaurant .restaurant__name {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant .restaurant__info {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant-item .restaurant-item__header .restaurant-item__header__poster {
+        width: 100%;
+        height: 36.7vh;
+    }
+    .restaurant .restaurant__poster {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+    .restaurant .restaurant__name {
+        font-size: 1.8rem;
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero-img {
+        display: flex;
+        width: 100%;
+    }
+    .hero-intro {
+        width: 100%;
+        text-align: center;
+        background-color: #5C3D2E;
+        max-width: 900vh;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .restaurants {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .hero-img img {
+        display: flex;
+        min-width: 1200px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .restaurants {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

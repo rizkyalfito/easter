@@ -1,0 +1,17 @@
+{
+
+    "id": "easter-catalogue-lite-pwa-1",
+    "start_url": "./index.html",
+    "name": ".easter Catalogue Lite",
+    "short_name": ".easter",
+    "description": "Free Catalogue Restaurants for you",
+    "display": "standalone",
+    "background_color": "whitesmoke",
+    "theme_color": "#2D2424",
+    "icons": [{
+        "src": "/icons/chicken.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+    }]
+}
